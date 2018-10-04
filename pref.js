@@ -45,3 +45,23 @@ function cls()
     if (confirm("Clear this page? This action can't be undone!"))
     document.getElementById("calc").value = "";
 }
+
+function download(filename, text) {
+  var element = document.createElement('a');
+  element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+  element.setAttribute('download', filename);
+
+  element.style.display = 'none';
+  document.body.appendChild(element);
+
+  element.click();
+
+  document.body.removeChild(element);
+}
+
+function DownloadF()
+{
+    var name = prompt("File name", "calculation.txt");
+    if (name)
+        download(name, document.getElementById("calc").value);
+}
