@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Megacalc | 1</title>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+        <script src="pref.js"></script>
+    </head>
+    <body>
+
+        <div id="menu" class="menu">
+            <!--div class="hbtn" onclick="open_pref();"></div-->
+            <div class="hbtn" onclick="add('\u03C0');">&pi;</div>
+            <div class="hbtn" onclick="add('# start coment\ncoment\nend coment\n#');">#</div>
+            <div class="hbtn" onclick="add('C = 2*\u03C0*r');"><em>f</em></div>
+            <div class="hbtn" onclick="add('(');">(</div>
+            <div class="hbtn" onclick="add(')');">)</div>
+            <div id="rst" class="hbtn" onclick="set_result();">x</div>
+            <hr>
+            <div class="hbtn" onclick="cls();">C</div>
+            <hr>
+            <div class="hbtn" onclick="load(0);">1</div>
+            <div class="hbtn" onclick="load(1);">2</div>
+            <div class="hbtn" onclick="load(2);">3</div>
+            <hr>
+            <a class="hbtn" href="help.html" target="_blank">?</a>
+        </div>
+        <div class="content">
+            <textarea name="calc" id="calc" spellcheck="false">x = 10*5</textarea>
+            <button onclick="calculate();">Calculate / Save</button>
+        </div>
+
+        <script>
+            load();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,74 @@
+body, html
+{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+textarea
+{
+    width: 100%;
+    height: calc(100% - 30px);
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    border: none;
+}
+
+button
+{
+    width: 100%;
+    height: 30px;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    outline: none;
+    background-color: rgb(190,190,190);
+}
+
+button:hover
+{
+    background-color: rgb(160,160,160);
+}
+
+button:active
+{
+    background-color: rgb(140,140,140);
+}
+
+.hbtn
+{
+    text-decoration: none;
+    display: block;
+    user-select: none;
+    margin: 5px;
+    width: calc(100% - 10px);
+    height: 40px;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 40px;
+    font-size: 22px;
+    background-color: gray;
+}
+
+.menu
+{
+    position: absolute;
+    float: left;
+    width: 50px;
+    height: 100%;
+    background-color: rgb(210,210,210);
+    transition: width .5s;
+
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: gray;
+}
+
+.content
+{
+    width: calc(100% - 50px);
+    height: 100%;
+    float: right;
+}
