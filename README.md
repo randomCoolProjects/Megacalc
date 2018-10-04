@@ -1,0 +1,2 @@
+# Megacalc
+A advanced calculator
